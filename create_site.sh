@@ -24,6 +24,7 @@ mv 2024-02-31-welcome.html ..; cd ..; mv 2024-02-31-welcome.html _site/posts
 cd _css
 mv stylesheet.css ..; cd ..; mv stylesheet.css _site/css
 
+mv robots.txt _site
 cd _site
 
 # Serve the final website
