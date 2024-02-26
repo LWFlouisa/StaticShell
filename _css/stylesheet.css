@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+  font-family: monospace;
+}
+
+@font-face {
+  font-family: AngelScript;
+  src: url("https://lwflouisa.github.io/MyFonts/AngelScriptFraponic-Regular.otf");
+}
+
+.conlang {
+  font-family: AngelScript;
+  color: #8e80bf;
+  font-weight: bold;
+
+  font-size: 26px;
+}
+
+@font-face {
+  font-family: Hafestran;
+  src: url("https://lwflouisa.github.io/MyFonts/HafestranFont-Regular.otf");
+}
+
+.hafestran {
+  font-family: Hafestran;
+  color: #8e80bf;
+  font-weight: bold;
+
+  font-size: 32px;
+}
