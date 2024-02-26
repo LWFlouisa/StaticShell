@@ -2,7 +2,6 @@
 # for i in *.md ; do echo "$i" && pandoc -s $i -o $i.html ; done
 for i in *.md ; do echo "$i" && pandoc -s "$i" -o "${i%.md}.html" ; done
 
-
 # Moves files to _sites directory.
 mkdir _site
 cd _site
@@ -21,3 +20,11 @@ cd _posts
 for i in *.md ; do echo "$i" && pandoc -s "$i" -o "${i%.md}.html" ; done
 
 mv 2024-02-31-welcome.html ..; cd ..; mv 2024-02-31-welcome.html _site/posts
+
+cd _css
+mv stylesheet.css ..; cd ..; mv stylesheet.css _site/css
+
+cd _site
+
+# Serve the final website
+ruby -run -ehttpd . -p9000
